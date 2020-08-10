@@ -7,29 +7,15 @@ import 'dart:io';
 
 class URLS {
 
-  static const String BASE_URL = 'https://chatbot.bolt.today:8443';
+  static const String BASE_URL = '';
 }
 class ApiManager {
-//  Future<UserMessageRes> conversationHistory(
-//      Map<dynamic, dynamic> postData) async {
-//    var url = '${URLS.BASE_URL}/LiveAgentSalesForce/getAllUserConversation';
-//    final response = await http.post('$url',
-//        headers: {HttpHeaders.contentTypeHeader: 'application/json'},
-//        body: json.encode(postData));
-////code
-////    UserMessageRes userConversationHistoryRes = UserMessageRes.fromJson(
-////        json.decode(response.body[0]));
-//    print(response.body);
-//    UserMessageRes userConversationHistoryRes =UserMessageRes.fromJson(json.decode(response.body));
-//
-////    UserMessageRes userConversationHistoryRes = userConversationHistoryRes.map((i) => UserMessageRes.fromJSON(i)).toList();
-//    return userConversationHistoryRes;
-//  }
+
 
 
   Future<List<UserMessageRes>> fetchMessages() async {
-var url = '${URLS.BASE_URL}/LiveAgentSalesForce/getAllUserConversation';
-    Map<String,String> body={"Session_key": "kkwlf0237r4ip01zbbt5jguydei0wig4"};
+var url = '${URLS.BASE_URL}';
+    Map<String,String> body=" ;
     http.Response response = await http.post(
       '$url',
       headers: {
