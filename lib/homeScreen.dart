@@ -23,7 +23,7 @@ class _HomeState extends State<Home> {
    void initState()
    {
      super.initState();
-     userReq.sessionKey="kkwlf0237r4ip01zbbt5jguydei0wig4";
+     
 ////    apiResponse=ApiManager().conversationHistory(userReq.toJson());
 ////   apiResponse.then((value) =>
 ////   print(value.userUttarance))
